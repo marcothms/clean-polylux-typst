@@ -1,0 +1,18 @@
+name: Build Typst document
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Typst
+        uses: lvignoli/typst-action@main
+        with:
+          source_file: presentation.typ
+      - name: Upload PDF file
+        uses: actions/upload-artifact@v3
+        with:
+          name: PDF
+          path: presentation.pdf
