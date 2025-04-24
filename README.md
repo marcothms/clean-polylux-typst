@@ -2,6 +2,9 @@
 
 This is a clean and dynamic presentation template for [Polylux](https://github.com/andreasKroepelin/polylux), a package for [Typst](https://typst.app/) to create nice looking presentations.
 
+Word of caution: Currently only works with typst 0.10, as newer version contain breaking changes.
+If you can fix it before I do, feel free to submit a PR.
+
 Initial work was already done, but I added lots of neat features, so now this template features:
 - An easy to use templating interface, which just requires some meta information
 - A footer with arbitrary text and a slide counter
